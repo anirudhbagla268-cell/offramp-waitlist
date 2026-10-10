@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anirudhbagla268-cell.github.io/offramp-waitlist/sitemap.xml
