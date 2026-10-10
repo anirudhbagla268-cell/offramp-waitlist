@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Offramp: a plan for after you stop GLP-1</title>
+<meta name="description" content="Stopped GLP-1 and the hunger, cravings or weight are coming back? Join the Offramp waitlist for a plan built on your data and reviewed by a physician.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5F1E8">
+<link rel="canonical" href="https://anirudhbagla268-cell.github.io/offramp-waitlist/stopped/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anirudhbagla268-cell.github.io/offramp-waitlist/stopped/">
+<meta property="og:site_name" content="Offramp">
+<meta property="og:title" content="Offramp: a plan for after you stop GLP-1">
+<meta property="og:description" content="Hunger comes back when the dose goes. Offramp builds a plan to meet it, with your data and a physician on our team.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath d='M1 4h28' stroke='%23BF5530' stroke-width='2.4' stroke-linecap='round' fill='none'/%3E%3Cpath d='M12 4c0 7 5 10 12 10' stroke='%23BF5530' stroke-width='2.4' stroke-linecap='round' fill='none'/%3E%3Cpath d='M21 11l4 3-4 3' stroke='%23BF5530' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","name":"Offramp","url":"https://anirudhbagla268-cell.github.io/offramp-waitlist/stopped/","description":"A plan for people who have stopped a GLP-1 medicine, built around hunger, labs and habits, reviewed by a physician."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is this medical advice?","acceptedAnswer":{"@type":"Answer","text":"No. A physician on our team reviews your plan and makes any medicine decision with you. In an emergency, call your local emergency number."}},
+{"@type":"Question","name":"Will I get my medicine back?","acceptedAnswer":{"@type":"Answer","text":"Only if your physician agrees it is right for you. The goal is the lowest dose that works, and sometimes that is none."}},
+{"@type":"Question","name":"Is regain after stopping normal?","acceptedAnswer":{"@type":"Answer","text":"Many people notice hunger, cravings or weight returning after they stop. It is not a lack of willpower. A plan helps you meet it."}},
+{"@type":"Question","name":"Which medicines does it cover?","acceptedAnswer":{"@type":"Answer","text":"Semaglutide and tirzepatide first, as injections or pills."}},
+{"@type":"Question","name":"What data do I need to share?","acceptedAnswer":{"@type":"Answer","text":"A 20 second daily check-in and your weekly weight. Labs, a wearable and body composition are optional."}},
+{"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Joining is free and takes no payment. We are still setting the price."}}
+]}]}
+</script>
+<style>
+/* Offramp, page A2. Quiet page, one loud moment: the hunger graph. */
+:root{
+  --bg:#F5F1E8; --surface:#FFFCF5; --soft:#E6EEE3; --deep:#153429;
+  --ink:#153429; --muted:#59705F; --line:#DBD4C4;
+  --accent:#BF5530; --accent-ink:#FFFCF5; --hold:#2F7A58; --on-deep:#F2EDE1;
+  --warn:#8A5A0C; --warn-bg:#F3E6C8;
+  --c-hunger:#C4562B; --c-plan:#2A8A5E; --c-ghost:#59705F;
+  --display:"Gabarito","Avenir Next",system-ui,sans-serif;
+  --body:"Hanken Grotesk","Avenir Next",system-ui,sans-serif;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1F19; --surface:#152D24; --soft:#1B382C; --deep:#091712;
+  --ink:#F2EDE1; --muted:#A4B8A9; --line:#27473A;
+  --accent:#E8865C; --accent-ink:#0E1F19; --hold:#63C095; --on-deep:#F2EDE1;
+  --warn:#E0B04A; --warn-bg:#3A3217;
+  --c-hunger:#D8683C; --c-plan:#3FA777; --c-ghost:#A4B8A9;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0E1F19; --surface:#152D24; --soft:#1B382C; --deep:#091712;
+  --ink:#F2EDE1; --muted:#A4B8A9; --line:#27473A;
+  --accent:#E8865C; --accent-ink:#0E1F19; --hold:#63C095; --on-deep:#F2EDE1;
+  --warn:#E0B04A; --warn-bg:#3A3217;
+  --c-hunger:#D8683C; --c-plan:#3FA777; --c-ghost:#A4B8A9;
+  color-scheme:dark;}
+
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+svg{max-width:100%}
+a{color:inherit}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:var(--bg);
+  padding:.5rem .8rem;border-radius:8px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+@supports (background:color-mix(in srgb,red 50%,transparent)){
+  .nav{background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px)}}
+.nav-in{max-width:var(--wrap);margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;padding:.65rem clamp(16px,4vw,32px)}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.1rem,3.4vw,1.28rem);letter-spacing:-.025em;text-decoration:none}
+.brand svg{width:clamp(24px,6vw,30px);height:auto;flex:none;color:var(--accent)}
+.cta{font-family:var(--display);font-weight:700;font-size:clamp(.84rem,2.6vw,.95rem);
+  color:var(--accent-ink);background:var(--accent);text-decoration:none;
+  padding:.52rem 1rem;border-radius:8px;white-space:nowrap;transition:filter .15s,transform .12s}
+.cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+
+/* bands */
+section{padding-block:clamp(48px,7vw,96px);padding-inline:clamp(16px,4vw,32px)}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+.wrap{max-width:var(--wrap);margin:0 auto}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(28px,5vw,72px);align-items:center}
+h1{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(2.1rem,4.1vw,3.15rem);line-height:1.05;letter-spacing:-.035em;text-wrap:balance}
+h2{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.65rem,3.2vw,2.5rem);line-height:1.1;letter-spacing:-.03em;text-wrap:balance}
+h3{margin:0;font-family:var(--display);font-weight:600;font-size:1.08rem;letter-spacing:-.018em}
+.lede{margin:.7rem 0 0;font-size:clamp(1rem,1.3vw,1.15rem);color:var(--muted);
+  max-width:34rem;text-wrap:pretty}
+.cap{margin:.7rem 0 0;font-size:.78rem;color:var(--muted)}
+.head{max-width:44rem}
+
+/* hero */
+.hero{padding-top:clamp(28px,4vw,56px)}
+.hero .copy{display:flex;flex-direction:column;gap:clamp(14px,1.8vw,22px);min-width:0}
+.hero .lede{margin:0}
+
+/* forms */
+form{display:flex;flex-direction:column;gap:9px;max-width:28rem;min-width:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.frow{display:flex;gap:9px;min-width:0}
+.frow>*{min-width:0}
+input,select{width:100%;min-height:50px;font:inherit;color:var(--ink);background:var(--surface);
+  border:1.5px solid var(--line);border-radius:8px;padding:.78rem .9rem;transition:border-color .15s}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:2.2rem}
+section.alt input,section.alt select{background-color:var(--bg)}
+input:hover,select:hover{border-color:var(--muted)}
+input::placeholder{color:var(--muted);opacity:.75}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible,.hgwrap:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+button.go{min-height:50px;font:inherit;font-family:var(--display);font-weight:700;font-size:.98rem;
+  color:var(--accent-ink);background:var(--accent);border:0;border-radius:8px;padding:.78rem 1.25rem;
+  cursor:pointer;white-space:nowrap;flex:none;transition:transform .12s,filter .15s}
+button.go:hover{filter:brightness(1.07);transform:translateY(-1px)}
+button.go:disabled{opacity:.6;transform:none;cursor:default}
+button.ghost{min-height:50px;font:inherit;font-weight:600;color:inherit;background:transparent;
+  border:1.5px solid currentColor;border-radius:8px;padding:.78rem 1.1rem;cursor:pointer;opacity:.85}
+button.ghost:hover{opacity:1}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.note{margin:0;font-size:.82rem;color:var(--muted)}
+.note a{text-underline-offset:2px}
+.note.bad{color:var(--accent);font-weight:500}
+.thanks{max-width:28rem;background:var(--soft);border-radius:10px;padding:1rem 1.15rem}
+.thanks b{display:block;font-family:var(--display);font-weight:700;font-size:1.26rem;letter-spacing:-.025em}
+.thanks p{margin:.2rem 0 0;color:var(--muted);font-size:.94rem}
+.thanks button{margin-top:.8rem}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:.86rem;font-weight:600}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;line-height:1.45}
+.consent input{width:20px;min-height:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--accent)}
+
+/* phone */
+.phone{width:min(308px,100%);margin-inline:auto;border:9px solid var(--deep);border-radius:36px;
+  background:var(--surface);padding:11px 10px 15px;box-shadow:0 22px 46px -24px rgba(21,52,41,.45)}
+section.alt .phone{background:var(--bg)}
+.ph-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:.1rem .3rem .65rem}
+.ph-top b{font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-.02em}
+.ph-top span{font-size:.74rem;color:var(--muted);white-space:nowrap}
+.ph-q{font-size:.8rem;color:var(--muted);padding:0 .3rem .3rem}
+.scale{display:grid;grid-template-columns:repeat(11,1fr);gap:3px;padding:0 .3rem .7rem}
+.scale i{display:block;aspect-ratio:1;border-radius:50%;background:var(--soft)}
+.scale i.on{background:var(--c-hunger)}
+.goal{display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;align-items:center;
+  background:var(--soft);border-radius:11px;padding:.6rem .7rem;margin-bottom:7px}
+.tick{width:20px;height:20px;border-radius:50%;background:var(--hold);display:grid;place-items:center}
+.tick svg{width:11px;height:11px;color:var(--surface);display:block}
+.tick.open{background:transparent;border:2px solid var(--muted);opacity:.55}
+.goal p{margin:0;font-size:.86rem;line-height:1.35}
+.goal small{display:block;font-size:.73rem;color:var(--muted);margin-top:1px}
+.ph-msg{background:var(--accent);color:var(--accent-ink);border-radius:11px;padding:.65rem .75rem;margin-bottom:9px}
+.ph-msg p{margin:0;font-size:.85rem;line-height:1.4}
+.ph-msg b{font-weight:600}
+.wk{margin-bottom:11px}
+.wk-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.85rem;margin-bottom:5px}
+.wk-h span{color:var(--muted)}
+.wk-h b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wk-h em{font-style:normal;font-weight:400;color:var(--muted);font-size:.78rem}
+.wk-bar{height:6px;border-radius:3px;background:var(--soft);overflow:hidden}
+.wk-bar i{display:block;height:100%;border-radius:3px;background:var(--hold);width:var(--w)}
+.wk-bar i.hun{background:var(--c-hunger)}
+.unlock{display:flex;align-items:center;gap:10px;background:var(--hold);color:var(--surface);
+  border-radius:11px;padding:.7rem .78rem;margin-top:13px}
+section.alt .unlock{color:var(--bg)}
+.unlock svg{width:19px;height:19px;flex:none;display:block}
+.unlock b{display:block;font-family:var(--display);font-weight:700;font-size:.94rem;letter-spacing:-.015em}
+.unlock span{display:block;font-size:.78rem;opacity:.85}
+
+/* hunger graph */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:clamp(14px,2vw,28px);min-width:0}
+.hg-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin-bottom:14px}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;background:var(--bg)}
+.seg button{font:inherit;font-weight:600;font-size:.9rem;border:0;background:transparent;color:var(--muted);
+  padding:.45rem 1rem;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-checked="true"]{background:var(--deep);color:var(--on-deep)}
+.seg button:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.84rem;color:var(--muted);margin:0;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:7px}
+.legend .k{width:18px;height:0;border-top:2.5px solid;flex:none}
+.legend .k.d{border-top-style:dashed}
+.hgwrap{position:relative;border-radius:8px;touch-action:pan-y}
+.hgwrap svg{display:block;overflow:visible}
+.ax{font-family:var(--body);font-size:11.5px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.pt{font-family:var(--body);font-size:12.5px;font-weight:600;fill:var(--ink)}
+.dl{font-family:var(--body);font-size:12px;font-weight:500;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.grid{stroke:var(--line);stroke-width:1}
+.ln{fill:none;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.s-dose{stroke:var(--ink);stroke-width:2}
+.s-hun{stroke:var(--c-hunger)}
+.s-plan{stroke:var(--c-plan)}
+.s-ghost{stroke:var(--c-ghost);stroke-dasharray:5 5;stroke-width:2}
+.f-dose{fill:var(--ink);opacity:.07}
+.dot{stroke:var(--surface);stroke-width:2}
+.d-hun{fill:var(--c-hunger)}.d-plan{fill:var(--c-plan)}.d-ghost{fill:var(--c-ghost)}.d-dose{fill:var(--ink)}
+.xh{stroke:var(--muted);stroke-width:1;opacity:.7}
+.brk{stroke:var(--muted);stroke-width:1;fill:none}
+.tip{position:absolute;top:6px;z-index:5;pointer-events:none;min-width:190px;max-width:260px;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.6rem .75rem;
+  box-shadow:0 10px 26px -14px rgba(21,52,41,.5);font-size:.84rem;line-height:1.35}
+.tip[hidden]{display:none}
+.tip .tw{font-weight:600;color:var(--muted);margin-bottom:4px;font-size:.8rem}
+.tip .tr{display:flex;align-items:center;gap:8px;padding:1.5px 0}
+.tip .tk{width:14px;height:0;border-top:2.5px solid;flex:none}
+.tip .tk.d{border-top-style:dashed}
+.tip .tv{font-weight:700;font-variant-numeric:tabular-nums}
+.tip .tl{color:var(--muted)}
+.tip .tn{margin-top:5px;padding-top:5px;border-top:1px solid var(--line);color:var(--ink)}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:16px 0 0;padding:0;list-style:none}
+.plans li{display:grid;grid-template-columns:12px minmax(0,1fr);gap:4px 10px;font-size:.9rem;line-height:1.4}
+.plans li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c-plan);margin-top:.38em}
+.plans b{display:block;font-weight:600}
+.plans span{color:var(--muted)}
+.plans.off{opacity:.45}
+.tview{margin-top:14px;font-size:.88rem}
+.tview summary{cursor:pointer;color:var(--muted);font-weight:600;width:max-content}
+.tview table{border-collapse:collapse;width:100%;margin-top:8px;font-variant-numeric:tabular-nums}
+.tview th,.tview td{padding:.4rem .5rem;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.tview th:first-child,.tview td:first-child{text-align:left}
+.tview th{font-weight:600;color:var(--muted);font-size:.8rem;white-space:normal;vertical-align:bottom}
+.tscroll{overflow-x:auto}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,40px);margin-top:clamp(20px,3vw,32px)}
+.why p{margin:.35rem 0 0;color:var(--muted);font-size:.94rem;text-wrap:pretty}
+
+/* loop */
+.steps{list-style:none;margin:clamp(18px,2.4vw,28px) 0 0;padding:0;counter-reset:s;display:grid;gap:18px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--deep);
+  color:var(--on-deep);font-family:var(--display);font-weight:700;display:grid;place-items:center;font-size:.95rem}
+.steps p{margin:.15rem 0 0;color:var(--muted);font-size:.95rem;max-width:30rem}
+
+/* map */
+.map{display:grid;grid-template-columns:minmax(0,1fr) clamp(40px,8vw,110px) minmax(0,1.05fr);
+  gap:0;align-items:center;margin-top:clamp(24px,3.4vw,40px)}
+.ins{display:grid;gap:10px}
+.in{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:center;
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:.7rem .85rem}
+.in .ic{width:38px;height:38px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--hold)}
+.in .ic svg{width:21px;height:21px;display:block}
+.in b{display:block;font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-.015em}
+.in span{display:block;font-size:.84rem;color:var(--muted);line-height:1.35}
+.conn{align-self:stretch;min-height:60px}
+.conn svg{width:100%;height:100%;display:block}
+.conn path{fill:none;stroke:var(--muted);stroke-width:1.5;vector-effect:non-scaling-stroke;opacity:.7}
+.prof{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:clamp(16px,2vw,24px)}
+.prof h3{font-size:1.2rem}
+.prof .sub{font-size:.8rem;color:var(--muted);margin:.1rem 0 .8rem}
+.find{display:grid;gap:10px;margin:0 0 18px;padding:0;list-style:none}
+.find li{font-size:.94rem;line-height:1.4;padding-left:12px;border-left:3px solid var(--c-hunger)}
+.find small{display:block;color:var(--muted);font-size:.78rem}
+.ready{border-top:1px solid var(--line);padding-top:14px}
+.ready-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--warn-bg);color:var(--warn);
+  border-radius:999px;padding:.25rem .7rem;font-weight:700;font-size:.82rem}
+.badge svg{width:14px;height:14px}
+.crit{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.crit li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;align-items:start;font-size:.9rem;line-height:1.35}
+.crit svg{width:20px;height:20px;display:block}
+.crit .ok{color:var(--hold)}.crit .wait{color:var(--warn)}
+
+/* figures */
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(22px,3vw,34px);
+  border-top:1px solid var(--line)}
+.fig{padding:clamp(16px,2vw,24px) clamp(14px,2vw,24px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
+.fig:first-child{border-left:0;padding-left:0}
+.fig p{margin:0;color:var(--muted);font-size:.9rem}
+.spark{display:block;width:100%;height:auto}
+.bar{fill:var(--soft)}.bar.on{fill:var(--hold)}
+.ring-bg{fill:none;stroke:var(--soft);stroke-width:8.5}
+.ring{fill:none;stroke:var(--hold);stroke-width:8.5;stroke-linecap:round}
+.ring-t{font-family:var(--display);font-weight:700;font-size:19px;fill:var(--ink)}
+.metric{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;margin-top:auto}
+.metric b{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:-.03em;line-height:1}
+.metric span{font-size:.84rem;color:var(--muted)}
+.c-num{font-family:var(--body);font-size:12.5px;font-weight:500;fill:var(--muted)}
+
+/* path */
+.rail{list-style:none;margin:clamp(22px,3vw,34px) 0 0;padding:0;position:relative}
+.rail li{position:relative;padding:0 0 22px 46px}
+.rail li:last-child{padding-bottom:0}
+.rail li::before{content:"";position:absolute;left:13px;top:30px;bottom:-2px;width:2px;background:var(--line)}
+.rail li:last-child::before{display:none}
+.rail li::after{content:"";position:absolute;left:5px;top:4px;width:18px;height:18px;border-radius:50%;
+  background:var(--surface);border:3px solid var(--hold)}
+.rail li:last-child::after{background:var(--hold)}
+.rail p{margin:.2rem 0 0;color:var(--muted);font-size:.95rem;max-width:28rem}
+.guard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(16px,2.2vw,28px)}
+section.alt .guard{background:var(--bg)}
+.guard h3{font-size:1.2rem}
+.guard .sub{font-size:.8rem;color:var(--muted);margin:.1rem 0 1rem}
+.gg+.gg{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.gg h4{margin:0 0 8px;font-family:var(--display);font-weight:600;font-size:.98rem;display:flex;align-items:center;gap:8px}
+.gg h4 svg{width:18px;height:18px;flex:none}
+.gg.dn h4{color:var(--hold)}.gg.up h4{color:var(--warn)}
+.gg ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.93rem}
+.gg li{padding-left:16px;position:relative}
+.gg li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--muted)}
+
+/* team, fit */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(22px,3vw,34px);border-top:1px solid var(--line)}
+.who{padding:clamp(16px,2vw,24px) clamp(14px,2vw,24px) 0;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:6px;min-width:0}
+.who:first-child{border-left:0;padding-left:0}
+.who p{margin:0;color:var(--muted);font-size:.93rem}
+.av{width:40px;height:40px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--hold);margin-bottom:4px}
+.av svg{width:21px;height:21px;display:block}
+.fit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,56px);margin-top:clamp(20px,3vw,32px)}
+.fit h3{margin-bottom:10px}
+.fit ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.fit li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:10px;font-size:.96rem;line-height:1.4}
+.fit svg{width:20px;height:20px;display:block;margin-top:1px}
+.fit .yes svg{color:var(--hold)}.fit .no svg{color:var(--muted)}
+
+/* evidence */
+.evi{list-style:none;margin:clamp(20px,3vw,32px) 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.evi li{display:grid;grid-template-columns:minmax(0,12rem) minmax(0,1fr);gap:8px clamp(16px,4vw,48px);
+  padding:clamp(14px,1.8vw,20px) 0;border-bottom:1px solid var(--line);align-items:baseline}
+.evi .big{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.03em;line-height:1}
+.evi p{margin:0;font-size:.97rem;max-width:40rem}
+.evi a{color:var(--muted);font-size:.84rem;text-underline-offset:2px}
+
+/* faq */
+.faq{max-width:46rem;margin-top:clamp(18px,2.6vw,28px);border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:1rem 0;font-family:var(--display);font-weight:600;
+  font-size:1.05rem;letter-spacing:-.015em;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);
+  transform:rotate(45deg);transition:transform .2s;flex:none;margin-right:4px}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq p{margin:0 0 1rem;color:var(--muted);max-width:40rem}
+
+/* close */
+.close{background:var(--deep);color:var(--on-deep);border-radius:20px;padding:clamp(24px,4vw,52px) clamp(18px,4vw,52px)}
+.close h2{color:var(--on-deep)}
+.close .lede{color:var(--on-deep);opacity:.8}
+.close .grid2{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.close form{margin-top:0;max-width:none}
+section .close input,section .close select{background-color:rgba(255,255,255,.08);border-color:rgba(255,255,255,.26);color:var(--on-deep)}
+section .close input[type="checkbox"]{background-color:transparent}
+.close select option{color:#153429;background:#FFFCF5}
+section .close select{background-image:linear-gradient(45deg,transparent 50%,#F2EDE1 50%),linear-gradient(135deg,#F2EDE1 50%,transparent 50%)}
+.close input::placeholder{color:var(--on-deep);opacity:.55}
+.close .note,.close .consent{color:var(--on-deep);opacity:.78}
+.close .field label{color:var(--on-deep)}
+.close .thanks{background:rgba(255,255,255,.1)}
+.close .thanks b,.close .thanks p{color:var(--on-deep)}
+.close .thanks p{opacity:.8}
+.close button.ghost{color:var(--on-deep)}
+.close :focus-visible{outline-color:var(--on-deep)}
+.f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.f2 .wide{grid-column:1/-1}
+.priv{margin-top:14px;font-size:.85rem;color:var(--muted)}
+.priv summary{cursor:pointer;font-weight:600;width:max-content}
+.priv p{max-width:46rem;margin:.6rem 0 0}
+
+footer{padding:clamp(22px,3.4vw,40px) clamp(16px,4vw,32px);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:flex-start;font-size:.82rem;color:var(--muted)}
+footer b{font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:-.025em;color:var(--ink)}
+footer .l{max-width:40rem;display:grid;gap:8px}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;gap:28px}
+  .split .art{order:2}
+  .why,.plans,.team,.fit,.close .grid2{grid-template-columns:1fr}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig:nth-child(3){border-left:0;padding-left:0}
+  .fig:nth-child(n+3){border-top:1px solid var(--line)}
+  .who{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-bottom:18px}
+  .who:first-child{border-top:0;padding-top:20px}
+  .map{grid-template-columns:1fr;gap:14px}
+  .conn{display:none}
+  .evi li{grid-template-columns:1fr}
+  .frow{flex-direction:column}
+  .f2{grid-template-columns:1fr}
+}
+@media (max-width:480px){.figs{grid-template-columns:1fr}.fig{border-left:0;padding-left:0;border-top:1px solid var(--line)}.fig:first-child{border-top:0}}
+
+@media (prefers-reduced-motion:no-preference){
+  .ln.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:dash 1.4s cubic-bezier(.33,0,.15,1) forwards}
+  @keyframes dash{to{stroke-dashoffset:0}}
+  .fadein{animation:fin .7s .5s both}
+  @keyframes fin{from{opacity:0}to{opacity:1}}
+}
+
+/* v3: compact graph, merged data section, care team, chips */
+:root{--t1:#DCEBDD;--t2:#F3E6C8;--t3:#F6DACB}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--t1:#1B382C;--t2:#3A3217;--t3:#3D2417}}
+:root[data-theme="dark"]{--t1:#1B382C;--t2:#3A3217;--t3:#3D2417}
+section.tight{padding-block:clamp(28px,3.4vw,48px)}
+.center{text-align:center;margin-inline:auto}
+h2.center{max-width:none}
+.lede.center{max-width:36rem}
+.g{color:var(--c-plan)}
+.gp{margin-top:clamp(14px,2vw,22px);padding:clamp(12px,1.8vw,22px)}
+.beats{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 22px;list-style:none;margin:10px 0 0;padding:0;font-weight:600;font-size:.95rem}
+.beats li{display:flex;align-items:center;gap:9px}
+.beats .ic{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none}
+.beats .ic svg{width:16px;height:16px;display:block}
+.hgwrap:not(.go) .draw,.hgwrap:not(.go) .fadein{animation-play-state:paused}
+.lb{font-family:var(--body);font-size:12.5px;font-weight:700;paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.lb.h{fill:var(--c-hunger)}.lb.p{fill:var(--c-plan)}
+.gapfill{fill:var(--c-plan);opacity:.15}
+.s-hno{stroke:var(--c-hunger);stroke-width:3.2}
+.s-hpl{stroke:var(--c-plan);stroke-width:3.2}
+.bar-d{fill:var(--ink)}
+table.sr{display:block;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.map2{display:grid;grid-template-columns:minmax(0,.85fr) clamp(36px,7vw,90px) minmax(0,1.15fr);gap:0;align-items:center;margin-top:clamp(22px,3vw,36px)}
+.prof-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.m{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.7rem .8rem;display:flex;flex-direction:column;gap:6px;min-width:0}
+.m h3{font-size:.84rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.m .metric b{font-size:1.35rem}
+.m .spark{height:46px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:14px 0 0;padding:0}
+.pills li{background:var(--soft);border-radius:999px;padding:.3rem .8rem;font-size:.85rem;font-weight:600;color:var(--hold)}
+.crew{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);margin-top:clamp(20px,3vw,34px)}
+.pro{background:var(--bg);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-align:center;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.pro:hover{transform:translateY(-3px);box-shadow:0 18px 34px -22px rgba(21,52,41,.5)}
+.pro .pic{background:var(--t);padding:clamp(18px,2.4vw,28px) 20px 0;display:flex;justify-content:center;align-items:flex-end}
+.p1{--t:var(--t1)}.p2{--t:var(--t2)}.p3{--t:var(--t3)}
+.pro .pic svg{width:min(230px,78%);height:auto;display:block}
+.pro h3{font-size:1.5rem;letter-spacing:-.03em;margin:16px 16px 0}
+.pro p{margin:.3rem 0 0;padding:0 20px 22px;color:var(--muted);font-size:.97rem;text-wrap:balance}
+.field.chips{flex-direction:row;flex-wrap:wrap;gap:8px;border:0;padding:0;margin:0;min-width:0}
+.chips legend{padding:0;margin-bottom:8px;font-size:.86rem;font-weight:600}
+.chips legend span{font-weight:400;opacity:.75}
+.close .chips label{position:relative;display:inline-flex;font-weight:500}
+.close .chips label input[type="checkbox"]{position:absolute;opacity:0;width:1px;height:1px;min-height:0;padding:0;border:0}
+.chips label span{display:inline-block;border:1.5px solid rgba(255,255,255,.3);border-radius:999px;padding:.42rem .85rem;font-size:.9rem;line-height:1.3;cursor:pointer;color:var(--on-deep);transition:background .15s,color .15s,border-color .15s}
+.chips label span:hover{border-color:var(--on-deep)}
+.close .chips label input:checked+span{background:var(--on-deep);color:var(--deep);border-color:var(--on-deep);font-weight:600}
+.close .chips label input:focus-visible+span{outline:2.5px solid var(--on-deep);outline-offset:2px}
+@media (max-width:520px){.beats{font-size:.82rem;gap:8px 12px}.beats .ic{width:24px;height:24px}.beats .ic svg{width:13px;height:13px}.beats li{gap:6px}}
+@media (max-width:900px){
+  .map2{grid-template-columns:1fr;gap:14px}
+  .map2 .conn{display:none}
+  .crew{grid-template-columns:1fr}
+  .pro{display:grid;grid-template-columns:128px minmax(0,1fr);grid-template-rows:1fr 1fr;text-align:left}
+  .pro .pic{grid-row:1/3;padding:14px 8px 0}
+  .pro h3{margin:0;padding:0 16px;align-self:end}
+  .pro p{padding:0 16px;align-self:start}
+}
+
+/* v3b: stopped and care pages */
+.bar-e{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:4 4}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);margin-top:clamp(20px,3vw,32px)}
+.tc{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.4vw,28px);text-align:center}
+section.alt .tc{background:var(--bg)}
+.tc .ic{width:56px;height:56px;border-radius:16px;margin:0 auto 14px;display:grid;place-items:center;color:var(--tc,var(--hold));background:var(--soft)}
+.tc .ic svg{width:28px;height:28px;display:block}
+.tc h3{font-size:1.2rem}
+.tc p{margin:.35rem 0 0;color:var(--muted);font-size:.95rem}
+.mini.four{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(20px,3vw,32px);gap:clamp(10px,1.6vw,18px)}
+.mini.four .m{padding:.9rem 1rem;gap:8px}
+.mini.four .m .spark{height:56px}
+.m .mp{margin:0;font-size:.85rem;color:var(--muted);line-height:1.4}
+.yr{margin-top:6px}
+.yr-row{display:grid;grid-template-columns:5.2rem minmax(0,1fr);gap:12px;align-items:center;margin-block:10px}
+.yr-l{font-size:.85rem;font-weight:600;color:var(--muted)}
+.yr-track{position:relative;height:40px}
+.yr-track.visits::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--line)}
+.visits i{position:absolute;top:50%;width:30px;height:30px;border-radius:50%;background:var(--ink);transform:translate(-50%,-50%);display:block}
+.visits i::before,.visits i::after{content:"";position:absolute;left:50%;top:50%;background:var(--surface);transform:translate(-50%,-50%);border-radius:2px}
+.visits i::before{width:14px;height:3px}.visits i::after{width:3px;height:14px}
+.weeks{display:grid;grid-template-columns:repeat(52,minmax(0,1fr));gap:2px;align-items:stretch}
+.weeks i{display:block;border-radius:2px;background:linear-gradient(var(--c-hunger) 0 28%,transparent 28% 34%,var(--c-plan) 34% 100%)}
+@media (max-width:900px){
+  .mini.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trio{grid-template-columns:1fr}
+  .tc{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 16px;text-align:left;align-items:center}
+  .tc .ic{margin:0;grid-row:1/3}
+  .tc h3{align-self:end}.tc p{align-self:start}
+}
+@media (max-width:480px){.yr-row{grid-template-columns:3.6rem minmax(0,1fr);gap:8px}.yr-l{font-size:.76rem}.visits i{width:26px;height:26px}.weeks{gap:1px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Offramp, back to top"><svg viewBox="0 0 30 18" aria-hidden="true" fill="none"><path d="M1 4h28" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M12 4c0 7 5 10 12 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M21 11l4 3-4 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Offramp</a>
+    <a class="cta" href="#join" data-track="cta_nav">Join the waitlist</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. Hero -->
+<section class="hero" id="top">
+  <div class="wrap split">
+    <div class="copy">
+      <h1>Stopped <span style="white-space:nowrap">GLP-1?</span> Get your hunger back under control.</h1>
+      <p class="lede">Regain, appetite and cravings after stopping are common. Get a plan built on your data and reviewed by a physician.</p>
+      <form id="wl-hero" data-wl="1" novalidate>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="frow">
+          <label class="sr" for="email-hero">Email address</label>
+          <input id="email-hero" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com">
+          <button class="go" type="submit">Join the waitlist</button>
+        </div>
+        <p class="note" data-note>Free. No payment, no card. By joining you agree to the <a href="#privacy">privacy notice</a>.</p>
+      </form>
+      <div class="thanks" data-thanks hidden>
+        <b>You are on the list.</b>
+        <p>Three quick questions help us build your plan.</p>
+        <button class="go" type="button" data-goto-step2>Answer three questions</button>
+      </div>
+    </div>
+    <div class="art">
+      <div class="phone" role="img" aria-label="Example phone screen. Hunger before dinner is 7 out of 10, four weeks after the last dose. The app has moved protein earlier and added a 20 minute walk after dinner.">
+        <div class="ph-top"><b>Today</b><span>Week 4 off</span></div>
+        <div class="ph-q">Hunger before dinner</div>
+        <div class="scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+        <div class="ph-msg"><p><b>Hunger is high. This is normal after stopping.</b> We moved protein to breakfast and added a 20 minute walk after dinner.</p></div>
+        <div class="goal"><div class="tick"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.5l3 3 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p>95 g of protein<small>Nutritionist</small></p></div>
+        <div class="goal"><div class="tick"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.5l3 3 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p>Strength session, 30 min<small>Trainer</small></p></div>
+        <div class="goal"><div class="tick open"></div><p>Log your evening meal<small>Nutritionist</small></p></div>
+      </div>
+      <p class="cap" style="text-align:center">Illustrative screen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. The graph -->
+<section class="alt tight" id="graph" data-depth="chart">
+  <div class="wrap">
+    <h2 class="center">The dose stops. Hunger jumps. <span class="g">We pull it down.</span></h2>
+    <div class="panel gp">
+      <div class="hgwrap" id="hg" role="img" aria-label="Chart over 24 weeks after the last dose. Without a plan, hunger climbs from about 2 to above 7 out of 10 within three months. With an Offramp plan, updates every few weeks keep hunger near 3.">
+        <noscript><p>Over 24 weeks after the last dose, hunger climbs without a plan. With Offramp, each rise is pulled back down.</p></noscript>
+      </div>
+      <ul class="beats">
+        <li><span class="ic" style="background:var(--ink);color:var(--bg)"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3.5v12M5 11l5 5 5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Dose stops</li>
+        <li><span class="ic" style="background:var(--c-hunger);color:var(--surface)"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 16.5v-12M5 9l5-5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Hunger jumps</li>
+        <li><span class="ic" style="background:var(--c-plan);color:var(--surface)"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 7h12M4 13h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="7.5" cy="7" r="2.2" fill="currentColor"/><circle cx="12.5" cy="13" r="2.2" fill="currentColor"/></svg></span>Your plan adjusts</li>
+      </ul>
+      <table class="sr" id="hgtable"></table>
+    </div>
+    <p class="cap center">Illustrative example, not a result.</p>
+  </div>
+</section>
+
+<!-- 3. Not willpower -->
+<section id="why">
+  <div class="wrap">
+    <h2 class="center">Not a failure of willpower.</h2>
+    <div class="trio">
+      <div class="tc"><div class="ic" style="--tc:var(--c-hunger)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6"/><path d="M5 21h14"/></svg></div><h3>The medicine left</h3><p>Its appetite effect fades.</p></div>
+      <div class="tc"><div class="ic" style="--tc:var(--c-hunger)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3-1 4-5 7-5s3 4 6 4 3-6 5-8"/><path d="M17 8h4v4"/></svg></div><h3>Hunger comes back</h3><p>Often before habits catch up.</p></div>
+      <div class="tc"><div class="ic" style="--tc:var(--c-plan)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/><circle cx="9" cy="8" r="2.3"/><circle cx="15" cy="16" r="2.3"/></svg></div><h3>A plan can answer it</h3><p>Protein, strength, sleep and check-ins.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Data builds the plan -->
+<section class="alt" id="data" data-depth="personal">
+  <div class="wrap">
+    <h2 class="center">Your data builds your plan.</h2>
+    <p class="lede center">No two bodies rebound alike, so no two plans match.</p>
+    <div class="map2">
+      <div class="ins">
+        <div class="in"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 9 7 12 3z"/></svg></div><div><b>Labs</b><span>Blood markers</span></div></div>
+        <div class="in"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-6 3 12 2-6h7"/></svg></div><div><b>Wearable</b><span>Sleep, steps, heart rate</span></div></div>
+        <div class="in"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="3"/><path d="M8.5 10a3.5 3.5 0 0 1 7 0"/><path d="M12 10l1.4-1.8"/></svg></div><div><b>Scale</b><span>Weight, lean mass</span></div></div>
+        <div class="in"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/><circle cx="9" cy="8" r="2.3" fill="var(--surface)"/><circle cx="15" cy="16" r="2.3" fill="var(--surface)"/></svg></div><div><b>Daily check-in</b><span>Hunger, cravings, mood</span></div></div>
+        <div class="in"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-35 12 12)"/><path d="M9.6 9.8l4.8 4.4"/></svg></div><div><b>Dose log</b><span>Every step, dated</span></div></div>
+      </div>
+      <div class="conn" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 10 C50 10 50 50 100 50"/><path d="M0 30 C50 30 50 50 100 50"/><path d="M0 50 H100"/><path d="M0 70 C50 70 50 50 100 50"/><path d="M0 90 C50 90 50 50 100 50"/></svg>
+      </div>
+      <div class="prof">
+        <div class="prof-h"><h3>Your recovery plan</h3><span class="badge"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 4.6V8l2.2 1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Hunger settling</span></div>
+        <div class="mini">
+          <div class="m">
+            <h3>Hunger</h3>
+            <svg class="spark" viewBox="0 0 220 60" role="img" aria-label="Hunger score easing over four weeks.">
+              <path d="M5 12 C40 10, 62 22, 100 32 S170 40, 215 42" fill="none" stroke="var(--c-hunger)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="215" cy="42" r="5" fill="var(--c-hunger)" stroke="var(--surface)" stroke-width="2"/>
+            </svg>
+            <div class="metric"><b>4.4</b><span>/10, easing</span></div>
+          </div>
+          <div class="m">
+            <h3>Weight</h3>
+            <svg class="spark" viewBox="0 0 220 60" role="img" aria-label="Weight flattening after a small rise.">
+              <path d="M5 44 C40 38, 62 24, 100 18 S170 16, 215 16" fill="none" stroke="var(--hold)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="215" cy="16" r="5" fill="var(--hold)" stroke="var(--surface)" stroke-width="2"/>
+            </svg>
+            <div class="metric"><b>+1.8</b><span>kg, holding</span></div>
+          </div>
+          <div class="m">
+            <h3>Activity</h3>
+            <svg class="spark" viewBox="0 0 220 60" role="img" aria-label="Seven days of activity, five at target.">
+              <rect class="bar on" x="4" y="31" width="19" height="25" rx="4"/><rect class="bar on" x="35" y="19" width="19" height="37" rx="4"/><rect class="bar" x="66" y="43" width="19" height="13" rx="4"/><rect class="bar on" x="97" y="13" width="19" height="43" rx="4"/><rect class="bar on" x="128" y="26" width="19" height="30" rx="4"/><rect class="bar" x="159" y="37" width="19" height="19" rx="4"/><rect class="bar on" x="190" y="16" width="19" height="40" rx="4"/>
+            </svg>
+            <div class="metric"><b>5</b><span>of 7 days on target</span></div>
+          </div>
+          <div class="m">
+            <h3>Protein</h3>
+            <svg class="spark" viewBox="0 0 220 60" role="img" aria-label="Protein target 82 percent complete today.">
+              <g transform="translate(30,30)"><circle class="ring-bg" r="20"/><circle class="ring" r="20" transform="rotate(-90)" stroke-dasharray="103 400"/></g>
+              <text class="ring-t" x="68" y="36">82%</text>
+            </svg>
+            <div class="metric"><b>95</b><span>g daily target</span></div>
+          </div>
+        </div>
+        <ul class="pills" aria-label="This week's plan changes"><li>+10 g protein</li><li>3 strength sessions</li><li>Walk after dinner</li></ul>
+      </div>
+    </div>
+    <p class="cap center">Illustrative example.</p>
+  </div>
+</section>
+
+<!-- 5. Ways forward -->
+<section id="path" data-depth="path">
+  <div class="wrap split">
+    <div>
+      <h2>Three steps. Always a way back.</h2>
+      <p class="lede">Your physician decides, with your data.</p>
+      <ol class="rail">
+        <li><h3>Steady</h3><p>First weeks: protein, strength, sleep, daily check-in.</p></li>
+        <li><h3>Hold</h3><p>We watch hunger, weight and labs.</p></li>
+        <li><h3>Decide together</h3><p>Stay off, or restart at the lowest dose that works.</p></li>
+      </ol>
+    </div>
+    <div class="guard">
+      <h3>Guardrails</h3>
+      <p class="sub">Examples. Your physician sets yours.</p>
+      <div class="gg dn">
+        <h4><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Staying off works when</h4>
+        <ul><li>Weight is steady for about 4 weeks</li><li>Hunger is manageable</li><li>Protein and strength targets are met</li></ul>
+      </div>
+      <div class="gg up">
+        <h4><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 8h9a4 4 0 0 1 0 8H8M7 4L3 8l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Talk about a low dose when</h4>
+        <ul><li>Weight is up 2 to 3 kg over 4 weeks</li><li>Strong hunger or cravings persist</li><li>Labs or blood pressure drift</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Care team -->
+<section class="alt" id="team">
+  <div class="wrap">
+    <h2 class="center">Three experts. One plan.</h2>
+    <div class="crew">
+      <article class="pro p1">
+        <div class="pic">
+          <svg viewBox="0 0 200 210" role="img" aria-label="Illustration of a physician in a white coat with a stethoscope">
+            <path d="M16 210c0-46 32-68 84-68s84 22 84 68z" fill="#FFFCF5" stroke="#153429" stroke-opacity=".18" stroke-width="2"/>
+            <path d="M74 146l26 40 26-40c-14 6-38 6-52 0z" fill="#2A8A5E"/>
+            <rect x="88" y="114" width="24" height="34" rx="10" fill="#C98F68"/>
+            <ellipse cx="100" cy="90" rx="35" ry="39" fill="#D9A07A"/>
+            <path d="M64 88c-5-32 14-49 37-49 25 0 41 17 35 49-6-14-14-22-36-22-21 0-31 8-36 22z" fill="#2B2118"/>
+            <circle cx="65" cy="96" r="6" fill="#D9A07A"/><circle cx="135" cy="96" r="6" fill="#D9A07A"/>
+            <circle cx="87" cy="95" r="3.2" fill="#2B2118"/><circle cx="113" cy="95" r="3.2" fill="#2B2118"/>
+            <path d="M89 109c7 7 15 7 22 0" stroke="#2B2118" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M72 148C64 178 80 198 100 198M128 148C136 178 120 198 100 198" fill="none" stroke="#153429" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="100" cy="200" r="8" fill="#153429"/>
+            <path d="M146 176v16M138 184h16" stroke="#2A8A5E" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Physician</h3>
+        <p>Decides if you stay off or restart low.</p>
+      </article>
+      <article class="pro p2">
+        <div class="pic">
+          <svg viewBox="0 0 200 210" role="img" aria-label="Illustration of a nutritionist in a green apron holding an apple">
+            <path d="M16 210c0-46 32-68 84-68s84 22 84 68z" fill="#F3E6C8"/>
+            <path d="M66 150h68l10 60H56z" fill="#2A8A5E"/>
+            <path d="M72 150l-6-8M128 150l6-8" stroke="#2A8A5E" stroke-width="5" stroke-linecap="round"/>
+            <rect x="88" y="114" width="24" height="34" rx="10" fill="#7A4B2F"/>
+            <circle cx="100" cy="42" r="17" fill="#1F1410"/>
+            <ellipse cx="100" cy="90" rx="35" ry="39" fill="#8D5A3C"/>
+            <path d="M64 92c-5-34 13-52 36-52s41 18 36 52c-5-16-15-26-36-26S69 76 64 92z" fill="#1F1410"/>
+            <circle cx="65" cy="97" r="6" fill="#8D5A3C"/><circle cx="135" cy="97" r="6" fill="#8D5A3C"/>
+            <circle cx="87" cy="96" r="3.2" fill="#1F1410"/><circle cx="113" cy="96" r="3.2" fill="#1F1410"/>
+            <path d="M89 110c7 7 15 7 22 0" stroke="#1F1410" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <ellipse cx="152" cy="196" rx="20" ry="11" fill="#8D5A3C"/>
+            <circle cx="152" cy="176" r="21" fill="#C4562B"/>
+            <path d="M152 156c0-8 5-12 11-13-1 8-5 12-11 13z" fill="#2A8A5E"/>
+            <path d="M141 170c2-4 5-6 9-7" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <h3>Nutritionist</h3>
+        <p>Protein and meals for a returning appetite.</p>
+      </article>
+      <article class="pro p3">
+        <div class="pic">
+          <svg viewBox="0 0 200 210" role="img" aria-label="Illustration of a personal trainer in a coral tank top with a dumbbell">
+            <path d="M16 210c0-46 32-68 84-68s84 22 84 68z" fill="#E8B896"/>
+            <path d="M58 156c10-8 28-10 42-10s32 2 42 10l10 54H48z" fill="#BF5530"/>
+            <rect x="88" y="114" width="24" height="34" rx="10" fill="#D9A07A"/>
+            <ellipse cx="100" cy="90" rx="35" ry="39" fill="#E8B896"/>
+            <path d="M65 84c-3-28 14-42 36-42 23 0 39 14 35 42-7-10-17-15-35-15s-29 5-36 15z" fill="#5A3A22"/>
+            <path d="M64 80h72" stroke="#BF5530" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="65" cy="97" r="6" fill="#E8B896"/><circle cx="135" cy="97" r="6" fill="#E8B896"/>
+            <circle cx="87" cy="97" r="3.2" fill="#5A3A22"/><circle cx="113" cy="97" r="3.2" fill="#5A3A22"/>
+            <path d="M88 110c8 8 16 8 24 0" stroke="#5A3A22" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <rect x="22" y="186" width="62" height="7" rx="3" fill="#153429"/>
+            <rect x="22" y="174" width="10" height="31" rx="4" fill="#153429"/><rect x="74" y="174" width="10" height="31" rx="4" fill="#153429"/>
+            <rect x="12" y="180" width="8" height="19" rx="3" fill="#153429"/><rect x="86" y="180" width="8" height="19" rx="3" fill="#153429"/>
+          </svg>
+        </div>
+        <h3>Trainer</h3>
+        <p>Strength that protects your muscle.</p>
+      </article>
+    </div>
+    <p class="cap center">Illustrated roles.</p>
+  </div>
+</section>
+
+<!-- 7. Who it is for -->
+<section id="fit">
+  <div class="wrap">
+    <h2 class="center">Who this is for.</h2>
+    <div class="fit">
+      <div class="yes">
+        <h3>A good fit</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>You stopped semaglutide or tirzepatide</li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Hunger, cravings or weight are creeping back</li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>You can do a 20 second daily check-in</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Not a fit yet</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Under 18, pregnant or planning a pregnancy</li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Eating disorder history that needs specialist care first</li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Binge eating or purging right now</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cap center">Offramp does not replace medical care or emergency services.</p>
+  </div>
+</section>
+
+<!-- 8. Join -->
+<section class="alt" id="join" data-depth="join">
+  <div class="wrap">
+    <div class="close">
+      <div class="grid2">
+        <div>
+          <h2>Get ahead of the regain.</h2>
+          <p class="lede">Join the waitlist. Free, no payment.</p>
+        </div>
+        <div>
+          <form id="wl-join" data-wl="1" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="frow">
+              <label class="sr" for="email-join">Email address</label>
+              <input id="email-join" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com">
+              <button class="go" type="submit">Join the waitlist</button>
+            </div>
+            <p class="note" data-note>Free. No payment, no card. By joining you agree to the <a href="#privacy">privacy notice</a>.</p>
+          </form>
+          <form id="wl-step2" novalidate hidden>
+            <p class="note" style="font-size:.95rem;opacity:1"><b>You are on the list.</b> Three quick questions. Skip any time.</p>
+            <div class="f2">
+              <div class="field"><label for="q-drug">What did you take?</label>
+                <select id="q-drug" name="drug"><option value="">Choose one</option><option>Semaglutide injection (Ozempic, Wegovy)</option><option>Tirzepatide injection (Mounjaro, Zepbound)</option><option>A GLP-1 pill</option><option>Something else</option><option>I am not sure</option></select></div>
+              <div class="field"><label for="q-time">When did you stop?</label>
+                <select id="q-time" name="time_on_drug"><option value="">Choose one</option><option>Within the last month</option><option>1 to 3 months ago</option><option>3 to 6 months ago</option><option>6 to 12 months ago</option><option>More than a year ago</option></select></div>
+              <fieldset class="field wide chips" id="q-why">
+                <legend>What is hardest right now? <span>Pick any.</span></legend>
+                <label><input type="checkbox" name="reason" value="Constant hunger"><span>Constant hunger</span></label>
+                <label><input type="checkbox" name="reason" value="Cravings"><span>Cravings</span></label>
+                <label><input type="checkbox" name="reason" value="Weight regain"><span>Weight regain</span></label>
+                <label><input type="checkbox" name="reason" value="Losing muscle"><span>Losing muscle</span></label>
+                <label><input type="checkbox" name="reason" value="Low energy"><span>Low energy</span></label>
+                <label><input type="checkbox" name="reason" value="Fear of regaining"><span>Fear of regaining</span></label>
+                <label><input type="checkbox" name="reason" value="Lingering side effects"><span>Lingering side effects</span></label>
+                <label><input type="checkbox" name="reason" value="Considering restarting"><span>Thinking of restarting</span></label>
+                <label><input type="checkbox" name="reason" value="Other"><span>Other</span></label>
+              </fieldset>
+              <label class="consent wide"><input type="checkbox" name="consent" id="q-consent"><span>I agree that Offramp may store my answers about my medication to contact me and shape the product. See the <a href="#privacy">privacy notice</a>.</span></label>
+            </div>
+            <p class="note" data-note></p>
+            <div class="frow"><button class="go" type="submit">Send answers</button><button class="ghost" type="button" data-skip>Skip</button></div>
+          </form>
+          <div class="thanks" data-thanks2 hidden>
+            <b>Thank you.</b>
+            <p>We will write when spots open.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><h2>Questions</h2></div>
+    <div class="faq">
+      <details><summary>Is this medical advice?</summary><p>No. A physician on our team reviews your plan and makes any medicine decision with you. In an emergency, call your local emergency number.</p></details>
+      <details><summary>Will I get my medicine back?</summary><p>Only if your physician agrees it is right for you. The goal is the lowest dose that works, and sometimes that is none.</p></details>
+      <details><summary>Is regain after stopping normal?</summary><p>Many people notice hunger, cravings or weight returning after they stop. It is not a lack of willpower. A plan helps you meet it.</p></details>
+      <details><summary>Which medicines does it cover?</summary><p>Semaglutide and tirzepatide first, as injections or pills.</p></details>
+      <details><summary>What data do I need to share?</summary><p>A 20 second daily check-in and your weekly weight. Labs, a wearable and body composition are optional.</p></details>
+      <details><summary>What does it cost?</summary><p>Joining is free and takes no payment. We are still setting the price.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Offramp</b></div>
+    <div class="l">
+      <div>Offramp is not a substitute for medical care or emergency services. Figures, screens and people shown on this page are illustrative.</div>
+      <details class="priv" id="privacy">
+        <summary>Privacy notice</summary>
+        <p>We collect your email and any answers you choose to give about your medication, when you stopped it and what is hardest now. We use them to contact you about Offramp and to decide what to build. Our team and the physicians who work with us can see them. We do not sell them. We keep them until you ask us to delete them. To see, correct or delete your data, write to anirudhbagla26.8@gmail.com. We also count visits to this page in aggregate.</p>
+      </details>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- helpers ---------- */
+function track(name, props) {
+  try {
+    if (window.plausible) window.plausible(name, { props: props || {} });
+    if (window.gtag) window.gtag("event", name, props || {});
+  } catch (e) {}
+}
+document.querySelectorAll("[data-track]").forEach(function (el) {
+  el.addEventListener("click", function () { track(el.getAttribute("data-track")); });
+});
+document.querySelectorAll('a[href="#privacy"]').forEach(function (a) {
+  a.addEventListener("click", function () { var d = document.getElementById("privacy"); if (d) d.open = true; });
+});
+document.querySelectorAll(".faq details").forEach(function (d) {
+  d.addEventListener("toggle", function () {
+    if (d.open) track("faq_open", { question: d.querySelector("summary").textContent });
+  });
+});
+/* One event the first time each marked band scrolls into view. */
+(function () {
+  if (!("IntersectionObserver" in window)) return;
+  var seen = {};
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var k = e.target.getAttribute("data-depth");
+      if (!seen[k]) { seen[k] = 1; track("view_" + k); }
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.35 });
+  document.querySelectorAll("[data-depth]").forEach(function (el) { io.observe(el); });
+})();
+
+/* ---------- the hunger graph ---------- */
+(function () {
+  var root = document.getElementById("hg");
+  if (!root) return;
+  var table = document.getElementById("hgtable");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var CFG = {"dose": [[0, 100, "Last dose", "s"], [3, 0, "No dose", ""]], "hno": [[0, 2.4], [2, 3.5], [4, 5.0], [6, 6.0], [9, 6.8], [12, 7.1], [18, 7.3], [24, 7.4]], "hpl": [[0, 2.4], [2, 3.4], [4, 4.3], [6, 4.0], [9, 3.5], [12, 3.2], [15, 3.5], [18, 3.1], [24, 2.9]], "upd": [3, 9, 15, 21], "updY": 1.4, "guides": [3], "noLabel": "Without a plan", "plLabel": "With Offramp", "gap": [14, 5.3], "gapN": [16, 5.2], "gapLabel": "We pull it down", "week0": "Week 0", "doseTitle": "Your dose"};
+  var WEEKS = 24;
+  var DOSE = CFG.dose;
+  /* Illustrative curves, not results. Hunger lags each dose step by about 4 to 5 weeks. */
+  var HNO = CFG.hno, HPL = CFG.hpl, UPD = CFG.upd;
+  var ENO = HNO[HNO.length - 1][1], EPL = HPL[HPL.length - 1][1];
+
+  /* monotone cubic interpolation, so curves never overshoot the data */
+  function tangents(P) {
+    var n = P.length, d = [], m = [], i;
+    for (i = 0; i < n - 1; i++) d[i] = (P[i + 1][1] - P[i][1]) / (P[i + 1][0] - P[i][0]);
+    m[0] = d[0]; m[n - 1] = d[n - 2];
+    for (i = 1; i < n - 1; i++) m[i] = d[i - 1] * d[i] <= 0 ? 0 : (d[i - 1] + d[i]) / 2;
+    for (i = 0; i < n - 1; i++) {
+      if (d[i] === 0) { m[i] = 0; m[i + 1] = 0; continue; }
+      var a = m[i] / d[i], b = m[i + 1] / d[i], s = a * a + b * b;
+      if (s > 9) { var t = 3 / Math.sqrt(s); m[i] = t * a * d[i]; m[i + 1] = t * b * d[i]; }
+    }
+    return m;
+  }
+  [HNO, HPL].forEach(function (S) { S.m = tangents(S); });
+  function val(S, x) {
+    var i = 0;
+    while (i < S.length - 2 && x > S[i + 1][0]) i++;
+    var x0 = S[i][0], x1 = S[i + 1][0], y0 = S[i][1], y1 = S[i + 1][1], h = x1 - x0, t = (x - x0) / h;
+    var t2 = t * t, t3 = t2 * t;
+    return (2 * t3 - 3 * t2 + 1) * y0 + (t3 - 2 * t2 + t) * h * S.m[i] + (-2 * t3 + 3 * t2) * y1 + (t3 - t2) * h * S.m[i + 1];
+  }
+  function doseAt(w) { var v = 100; DOSE.forEach(function (s) { if (w >= s[0]) v = s[1]; }); return v; }
+  function f1(n) { return (Math.round(n * 10) / 10).toFixed(1); }
+
+  function build(anim) {
+    var W = Math.max(280, Math.floor(root.clientWidth));
+    var narrow = W < 520;
+    var ML = narrow ? 34 : 42, MR = 8, PW = W - ML - MR;
+    var SH = narrow ? 46 : 56, HH = narrow ? 140 : 164;
+    var sBase = 18 + SH;
+    var hTop = sBase + 30, hBot = hTop + HH, H = hBot + 24;
+    function X(w) { return ML + w / WEEKS * PW; }
+    function Y(v) { return hBot - v / 10 * HH; }
+    function segs(S) {
+      var o = [];
+      for (var i = 0; i < S.length - 1; i++) {
+        var x0 = S[i][0], x1 = S[i + 1][0], h = x1 - x0;
+        o.push([X(x0), Y(S[i][1]), X(x0 + h / 3), Y(S[i][1] + S.m[i] * h / 3), X(x1 - h / 3), Y(S[i + 1][1] - S.m[i + 1] * h / 3), X(x1), Y(S[i + 1][1])]);
+      }
+      return o;
+    }
+    function p(n) { return n.toFixed(1); }
+    function fwd(sg) {
+      var s = "M" + p(sg[0][0]) + " " + p(sg[0][1]);
+      sg.forEach(function (c) { s += "C" + p(c[2]) + " " + p(c[3]) + " " + p(c[4]) + " " + p(c[5]) + " " + p(c[6]) + " " + p(c[7]); });
+      return s;
+    }
+    function back(sg) {
+      var s = "";
+      for (var i = sg.length - 1; i >= 0; i--) { var c = sg[i]; s += "C" + p(c[4]) + " " + p(c[5]) + " " + p(c[2]) + " " + p(c[3]) + " " + p(c[0]) + " " + p(c[1]); }
+      return s;
+    }
+    function fade(delay) { return anim ? ' class="fadein" style="animation-delay:' + delay + 's"' : ""; }
+    var sNo = segs(HNO), sPl = segs(HPL), a = [];
+    a.push('<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true" focusable="false">');
+    /* dose bars */
+    a.push('<text class="pt" x="0" y="11">' + CFG.doseTitle + '</text>');
+    DOSE.forEach(function (d, i) {
+      var nx = i < DOSE.length - 1 ? DOSE[i + 1][0] : WEEKS;
+      var x0 = X(d[0]) + 1.5, x1 = X(nx) - 1.5;
+      var h = d[1] > 0 ? d[1] / 100 * (SH - 17) : 9, y = sBase - h;
+      var op = d[1] > 0 ? 1 - (100 - d[1]) / 100 * 0.8 : 1;
+      var tx = d[3] === "s" ? x0 : (x0 + x1) / 2, ta = d[3] === "s" ? "start" : "middle";
+      var shape = d[1] > 0
+        ? '<rect class="bar-d" x="' + p(x0) + '" y="' + p(y) + '" width="' + p(x1 - x0) + '" height="' + p(h) + '" rx="5" opacity="' + op.toFixed(2) + '"/>'
+        : '<rect class="bar-e" x="' + p(x0) + '" y="' + p(y) + '" width="' + p(x1 - x0) + '" height="' + p(h) + '" rx="5"/>';
+      a.push('<g' + fade((i * 0.18).toFixed(2)) + '>' + shape +
+        '<text class="pt" x="' + p(tx) + '" y="' + p(y - 5) + '" text-anchor="' + ta + '">' + d[2] + "</text></g>");
+    });
+    /* hunger panel */
+    a.push('<text class="pt" x="0" y="' + (hTop - 10) + '">Your hunger</text>');
+    a.push('<line class="grid" x1="' + ML + '" x2="' + (W - MR) + '" y1="' + hTop + '" y2="' + hTop + '"/>');
+    a.push('<line class="grid" x1="' + ML + '" x2="' + (W - MR) + '" y1="' + hBot + '" y2="' + hBot + '"/>');
+    a.push('<text class="ax" x="' + (ML - 7) + '" y="' + (hTop + 4) + '" text-anchor="end">High</text>');
+    a.push('<text class="ax" x="' + (ML - 7) + '" y="' + (hBot + 4) + '" text-anchor="end">Low</text>');
+    CFG.guides.forEach(function (w) {
+      a.push('<line class="grid" stroke-dasharray="3 4" x1="' + p(X(w)) + '" x2="' + p(X(w)) + '" y1="' + (sBase + 2) + '" y2="' + hBot + '"/>');
+    });
+    /* the gap we close */
+    a.push('<path class="gapfill' + (anim ? " fadein" : "") + '"' + (anim ? ' style="animation-delay:2.6s"' : "") + ' d="' + fwd(sNo) + "L" + p(sPl[sPl.length - 1][6]) + " " + p(sPl[sPl.length - 1][7]) + back(sPl) + 'Z"/>');
+    a.push('<path class="' + (anim ? "ln draw " : "ln ") + 's-hno" pathLength="1" d="' + fwd(sNo) + '"/>');
+    a.push('<path class="' + (anim ? "ln draw " : "ln ") + 's-hpl" pathLength="1"' + (anim ? ' style="animation-delay:1.6s"' : "") + ' d="' + fwd(sPl) + '"/>');
+    var ex = X(WEEKS);
+    a.push('<g' + fade(1.3) + '><circle class="dot d-hun" r="5" cx="' + p(ex) + '" cy="' + p(Y(ENO)) + '"/><text class="lb h" x="' + p(ex) + '" y="' + p(Y(ENO) - 11) + '" text-anchor="end">' + CFG.noLabel + '</text></g>');
+    a.push('<g' + fade(3) + '><circle class="dot d-plan" r="5" cx="' + p(ex) + '" cy="' + p(Y(EPL)) + '"/><text class="lb p" x="' + p(ex) + '" y="' + p(Y(EPL) + 21) + '" text-anchor="end">' + CFG.plLabel + '</text></g>');
+    a.push('<text class="lb p' + (anim ? " fadein" : "") + '"' + (anim ? ' style="animation-delay:2.8s"' : "") + ' x="' + p(X(narrow ? CFG.gapN[0] : CFG.gap[0])) + '" y="' + p(Y(CFG.gap[1]) + 4) + '" text-anchor="middle">' + CFG.gapLabel + '</text>');
+    UPD.forEach(function (w, i) {
+      a.push('<circle class="dot d-plan' + (anim ? " fadein" : "") + '"' + (anim ? ' style="animation-delay:' + (2.2 + i * 0.25) + 's"' : "") + ' r="6" cx="' + p(X(w)) + '" cy="' + p(Y(val(HPL, w))) + '"/>');
+    });
+    if (!narrow) a.push('<text class="ax' + (anim ? " fadein" : "") + '"' + (anim ? ' style="animation-delay:2.2s"' : "") + ' x="' + p(X(UPD[0]) - 4) + '" y="' + p(Y(CFG.updY)) + '">Plan update</text>');
+    /* x axis */
+    [0, 6, 12, 18, 24].forEach(function (w) {
+      a.push('<text class="ax" x="' + p(X(w)) + '" y="' + (H - 6) + '" text-anchor="' + (w === 0 ? "start" : w === 24 ? "end" : "middle") + '">' + (w === 0 ? CFG.week0 : w) + "</text>");
+    });
+    a.push("</svg>");
+    var old = root.querySelector("svg");
+    var holder = document.createElement("div");
+    holder.innerHTML = a.join("");
+    var svg = holder.firstChild;
+    if (old) root.replaceChild(svg, old); else root.insertBefore(svg, root.firstChild);
+  }
+
+  /* data table for screen readers */
+  (function () {
+    var cap = document.createElement("caption"); cap.textContent = "Illustrative values by week";
+    var thead = document.createElement("thead"), hr = document.createElement("tr");
+    ["Week", "Dose (% of start)", "Hunger without a plan (0 to 10)", "Hunger with Offramp (0 to 10)"].forEach(function (t) {
+      var th = document.createElement("th"); th.scope = "col"; th.textContent = t; hr.appendChild(th);
+    });
+    thead.appendChild(hr);
+    var tb = document.createElement("tbody");
+    for (var w = 0; w <= WEEKS; w += 3) {
+      var tr = document.createElement("tr");
+      [String(w), doseAt(w) + "%", f1(val(HNO, w)), f1(val(HPL, w))].forEach(function (t) {
+        var td = document.createElement("td"); td.textContent = t; tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    }
+    table.appendChild(cap); table.appendChild(thead); table.appendChild(tb);
+  })();
+
+  /* first paint paused, play once on first view, redraw statically on resize */
+  build(!reduce);
+  if (reduce || !("IntersectionObserver" in window)) root.classList.add("go");
+  else {
+    var io = new IntersectionObserver(function (es) {
+      if (!es[0].isIntersecting) return;
+      io.disconnect(); root.classList.add("go"); track("view_chart_play");
+    }, { threshold: 0.4 });
+    io.observe(root);
+  }
+  if ("ResizeObserver" in window) {
+    var lw = root.clientWidth;
+    new ResizeObserver(function () {
+      var nw = root.clientWidth;
+      if (Math.abs(nw - lw) < 2) return;
+      lw = nw; build(false);
+    }).observe(root);
+  }
+})();
+
+
+/* ---------- waitlist forms ---------- */
+/* Paste your Google Apps Script web app URL here (see SETUP.md). While empty, nothing is stored. */
+var ENDPOINT = "https://script.google.com/macros/s/AKfycbxd-o5dcRzwP-xUFGNCFkMGDpakboxBpbQQyOnzwDcnyXu_jlDeazXp8rxjxrLfEXZDEA/exec";
+var PAGE = "B-stopped";
+(function () {
+  var email = "";
+  var q = new URLSearchParams(location.search);
+  var base = {
+    page: PAGE,
+    utm_source: q.get("utm_source") || "", utm_medium: q.get("utm_medium") || "",
+    utm_campaign: q.get("utm_campaign") || "", utm_content: q.get("utm_content") || "",
+    ref: document.referrer || "", landing: location.pathname
+  };
+  function send(extra) {
+    var data = {};
+    Object.keys(base).forEach(function (k) { data[k] = base[k]; });
+    Object.keys(extra).forEach(function (k) { data[k] = extra[k]; });
+    if (!ENDPOINT) { if (window.console) console.warn("Offramp: ENDPOINT is empty, so nothing was stored.", data); return Promise.resolve(); }
+    var body = new URLSearchParams(data);
+    if (/script\.google\.com/.test(ENDPOINT)) return fetch(ENDPOINT, { method: "POST", mode: "no-cors", body: body });
+    return fetch(ENDPOINT, { method: "POST", body: body, headers: { Accept: "application/json" } }).then(function (r) { if (!r.ok) throw 0; });
+  }
+  var step2 = document.getElementById("wl-step2");
+  var join1 = document.getElementById("wl-join");
+  var thanks2 = document.querySelector("[data-thanks2]");
+
+  function openStep2(scroll) {
+    join1.hidden = true; step2.hidden = false;
+    if (scroll) {
+      document.getElementById("join").scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(function () { var s = document.getElementById("q-drug"); if (s) s.focus({ preventScroll: true }); }, 450);
+    }
+  }
+  document.querySelectorAll("[data-goto-step2]").forEach(function (b) {
+    b.addEventListener("click", function () { openStep2(true); });
+  });
+
+  document.querySelectorAll("form[data-wl]").forEach(function (f) {
+    var note = f.querySelector("[data-note]");
+    var btn = f.querySelector("button");
+    var input = f.querySelector('input[type="email"]');
+    var rest = note ? note.innerHTML : "";
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (f.querySelector(".hp").value) return;
+      if (!input.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+        note.textContent = "That email does not look right."; note.className = "note bad"; input.focus(); return;
+      }
+      note.innerHTML = rest; note.className = "note";
+      email = input.value.trim();
+      var contact = (f.querySelector('input[name="contact"]') || {}).value || "";
+      btn.disabled = true; btn.textContent = "Sending";
+      send({ stage: "1", email: email, contact: contact }).then(function () {
+        track("join_step1", { form: f.id });
+        if (f.id === "wl-hero") {
+          f.hidden = true; f.parentNode.querySelector("[data-thanks]").hidden = false;
+        } else { openStep2(false); }
+      }).catch(function () {
+        btn.disabled = false; btn.textContent = "Try again";
+        note.textContent = "That did not go through. Please try once more."; note.className = "note bad";
+      });
+    });
+  });
+
+  if (step2) {
+    var n2 = step2.querySelector("[data-note]");
+    step2.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = {};
+      ["drug", "time_on_drug"].forEach(function (k) { v[k] = step2.elements[k].value; });
+      v.worry = [].slice.call(step2.querySelectorAll('input[name="reason"]:checked')).map(function (c) { return c.value; }).join("; ");
+      var any = Object.keys(v).some(function (k) { return v[k]; });
+      if (!any) { n2.textContent = "Pick at least one answer, or choose Skip."; n2.className = "note bad"; return; }
+      if (!step2.elements.consent.checked) { n2.textContent = "Tick the box so we can store your answers, or choose Skip."; n2.className = "note bad"; return; }
+      var b = step2.querySelector("button.go"); b.disabled = true; b.textContent = "Sending";
+      v.stage = "2"; v.email = email; v.consent = "yes";
+      send(v).then(function () {
+        track("join_step2", { drug: v.drug });
+        step2.hidden = true; thanks2.hidden = false;
+      }).catch(function () {
+        b.disabled = false; b.textContent = "Try again";
+        n2.textContent = "That did not go through. Please try once more."; n2.className = "note bad";
+      });
+    });
+    step2.querySelector("[data-skip]").addEventListener("click", function () {
+      track("join_skip"); step2.hidden = true; thanks2.hidden = false;
+    });
+  }
+})();
+</script>
+</body>
+</html>
